@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    height: 100vh;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+    background: lightgreen;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+}
+
+.chat {
+    padding: 0 40px 10px 40px;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 100%;
+    justify-content: space-between;
+    background: lightcoral;
+}
+
+.menu {
+    display: flex;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    display: flex;
+    width: 100%;
+    background: lightblue;
+}
+
+.chat-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* a changer*/
+}
+
+.discussion {
+}
+
+.received {
+    width: 50%;
+    background: white;
+}
+
+.sent {
+    justify-self: flex-end;
+    width: fit-content;
+    padding: 5px 30px;
+    background: #78E378;
+    gap: 10px;
+}

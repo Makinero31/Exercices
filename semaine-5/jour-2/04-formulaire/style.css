@@ -1,0 +1,12 @@
+h1 {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.valid {
+    color: green;
+}
+
+.notvalid {
+    color: red;
+}

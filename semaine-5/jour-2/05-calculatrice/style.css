@@ -1,0 +1,19 @@
+.add {
+    color: red;
+}
+
+.substract {
+    color: green;
+}
+
+.multiply {
+    color: blue;
+}
+
+.divide {
+    color: darkslategray;
+}
+
+.impossible {
+    background: red;
+}

@@ -1,0 +1,53 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: lightgray;
+    font-family: "Comic Sans MS", cursive;
+}
+
+header, footer {
+    color: white;
+    background: orangered;
+    text-align: center;
+
+    padding: 20px;
+}
+
+main {
+    width: 600px;
+    border: 5px solid white;
+    border-radius: 5px;
+    background: white;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.picture {
+    border: 2px solid orangered;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+h3 {
+    margin: 30px 0;
+    border-bottom: 1px solid orangered;
+    padding-bottom: 20px;
+}
+
+.links {
+    display: block;
+}
+
+a {
+    color: orangered;
+    text-decoration: none;
+}

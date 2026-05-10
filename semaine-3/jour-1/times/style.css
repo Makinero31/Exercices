@@ -1,0 +1,72 @@
+body {
+    background-color: #F7F7F7;
+}
+
+img {
+    width: 100%;
+}
+
+.vignette {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+.header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 40px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-family: "UnifrakturMaguntia", cursive;
+}
+
+main {
+    background-color: white;
+    padding: 1rem;
+}
+
+article {
+    border-bottom: solid 2px gray;
+    margin: 10px auto;
+}
+
+ul {
+    display: none;
+}
+
+@media screen AND (min-width: 450px) {
+    img {
+        max-width: 400px;
+    }
+
+    main {
+        display: flex;
+    }
+
+
+    .section1 {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:
+    "art1 pic"
+    "art2 pic";
+    }
+
+    .article1 {
+        grid-area: art1;
+    }
+
+    .article2 {
+        grid-area: art2;
+    }
+
+    .pic1 {
+        grid-area: pic1;
+    }
+
+}

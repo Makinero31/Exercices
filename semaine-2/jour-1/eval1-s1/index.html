@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="FR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <img src="logo.png" height="20px" width="50px" alt="Reverb">
+            <form action="">
+                <input type="search" id="recherche" name="recherche" placeholder="Shop for used & new music gear..."/>
+                <button type="submit">recherche</button>
+            </form>
+            <div>
+                <img src="fav.png" height="20px" width="20px" alt="favorites">
+                <p>Favorites</p>
+            </div>
+            <div>
+                <img src="cart.png" height="20px" width="20px" alt="cart">
+                <p>Cart</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Guitars</a></li>
+                    <li><a href="#">Pedals and Amplifiers</a></li>
+                    <li><a href="#">Keyboards and Synths</a></li>
+                    <li><a href="#">Recording gear</a></li>
+                    <li><a href="#">Drums</a></li>
+                    <li><a href="#">DJ and Audio gear</a></li>
+                    <li><a href="#">More Categories</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Brands</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Shops</a></li>
+                    <li><a href="#">Reverb Gives</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <nav>
+                <ol>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Fender</a></li>
+                    <li><a href="#">Fender Electric Guitars</a></li>
+                    <li><a href="#">Fender Jazzmaster</a></li>
+                    <li>Fender Jazzmaster (1966 - 1969)</li>
+                </ol>
+            </nav>
+            <section>
+                <div>
+                    <img src="guitar.png" alt="product">
+                </div>
+                <div>
+                    <h1>Fender jazzmaster 1966 - Sunburst</h1>
+                    <p>Used - Good</p>
+                    <p>PRICE DROP</p>
+                    <p><s>€10,500</s>Original price</p>
+                    <p><strong>€9,500</strong></p>
+                    <p>+€100 Shipping</p>
+                    <div>
+                        <button type="button">Buy It Now</button>
+                        <button type="button">Add to Cart</button>
+                        <button type="button">Make an offer</button>
+                        <button type="button">Watch</button>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <details>
+                    <summary><h2>Product Specs</h2></summary>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi delectus dolorum
+                        excepturi iure nam nesciunt nulla perspiciatis saepe, voluptatem.</p>
+                </details>
+                <div>
+                    <h2>About the Seller</h2>
+                    <img src="seller.png" alt="seller">
+                    <ul>
+                        <li>Fabien's Gear Depot</li>
+                        <li>Digne Les Bains, France</li>
+                        <li>Sales: 3</li>
+                        <li>Joined Reverb: 2018</li>
+                    </ul>
+                    <div>
+                        <button type="button">Message seller</button>
+                        <button type="button">View more from this shop</button>
+                    </div>
+                </div>
+                <details>
+                    <summary><h2>Payment & Returns</h2></summary>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, numquam, repellat. Corporis,
+                        error facilis harum impedit nesciunt nihil officia placeat.</p>
+                </details>
+                <details>
+                    <summary><h2>Seller Reviews</h2></summary>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, numquam, repellat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, numquam, repellat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, numquam, repellat.</p>
+                </details>
+                <!--Manque étoiles-->
+                <details>
+                    <summary><h2>Product Overview</h2></summary>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, numquam, repellat.</p>
+                </details>
+                <div>
+                    <h2>Product Reviews</h2>
+                    <p>5.0</p>
+                    <p>5.0 out of 5 based on 2 reviews</p>
+                    <button type="button">Write a Product Review</button>
+                </div>
+                <!--Manque étoiles-->
+                <div>
+                    <label for="5stars">5 stars</label>
+                    <progress id="5stars" max="100" value="20"></progress>
+                    <label for="5stars">2 reviews</label>
+                    <label for="4stars">4 stars</label>
+                    <progress id="4stars" max="100" value="0"></progress>
+                    <label for="4stars">0 reviews</label>
+                    <label for="3stars">3 stars</label>
+                    <progress id="3stars" max="100" value="0"></progress>
+                    <label for="3stars">0 reviews</label>
+                    <label for="2stars">2 stars</label>
+                    <progress id="2stars" max="100" value="0"></progress>
+                    <label for="2stars">0 reviews</label>
+                    <label for="1stars">1 stars</label>
+                    <progress id="1stars" max="100" value="0"></progress>
+                    <label for="1stars">0 reviews</label>
+                </div>
+                <div>
+                    <form action="">
+                        <input type="search" placeholder="Search product reviews"/>
+                        <button type="submit">Recherche</button>
+                        <label for="filter">Filter by</label>
+                        <select name="filter" id="filter">
+                            <option value="date">Date</option>
+                            <option value="rating">Rating</option>
+                        </select>
+                        <label for="sort">Sort by</label>
+                        <select name="sort" id="sort">
+                            <option value="helpful">Most Helpful</option>
+                        </select>
+                    </form>
+                    <button type="button">Report listing to Reverb</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <ul>
+                    <li><h3>Shop Gear</h3></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Brands</a></li>
+                    <li><a href="#">Deals and Steals</a></li>
+                    <li><a href="#">Price Drops</a></li>
+                    <li><a href="#">New and Popular</a></li>
+                    <li><a href="#">Handpicked Collections</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><h3>Sell on Reverb</h3></li>
+                    <li><a href="#">Seller Hub</a></li>
+                    <li><a href="#">Reverb Payments FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><h3>Resources</h3></li>
+                    <li><a href="#">Reverb News</a></li>
+                    <li><a href="#">Price Guide</a></li>
+                    <li><a href="#">Buying Guides</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><h3>Help & Tools</h3></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Support</a></li>
+                    <li><a href="#">Reverb Protection</a></li>
+                    <li><a href="#">Mobile Apps</a></li>
+                    <li><a href="#">Integration & API</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                    <li><a href="#">Reverb App Store</a></li>
+                    <li><a href="#">Privacy Settings</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><h3>Company</h3></li>
+                    <li><a href="#">About Reverb</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Reverb Gives</a></li>
+                    <li><a href="#">Trust & Safety</a></li>
+                </ul>
+            </div>
+            <div>
+                <form action="">
+                    <label for="mail">Get the Best of Reverb in your Inbox</label>
+                    <input type="email" id="mail" placeholder="Your Email"/>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p>By clicking Subscribe, I agree to receive exclusive offers & promotions, news & reviews, and
+                    personalized tips for buying and selling on reverb</p>
+            </div>
+            <p><a href="#">Need help?</a></p>
+        </footer>
+    </body>
+</html>

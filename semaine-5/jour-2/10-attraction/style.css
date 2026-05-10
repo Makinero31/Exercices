@@ -1,0 +1,7 @@
+.authorized {
+    color: green;
+}
+
+.denied {
+    color: red;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head><!-- Head: metadata + stylesheets -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Item Discussion Page</title>
+        <link rel="stylesheet" href="reset.css">
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+
+    <body><!-- Body: content of the page -->
+
+        <!-- Header: page name + nav -->
+        <header>
+            <h1>Item Discussion Page</h1>
+            <nav>
+                <ul>
+                    <li class="navbar"><a href="#">Home</a></li>
+                    <li class="navbar"><a href="#">My Items</a></li>
+                    <li class="navbar"><a href="#">Messages</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main content: info about the item + conversation -->
+        <main>
+            <section>
+                <h2>Item for Sale</h2>
+                <article class="description">
+                    <h3>Vintage Leather Jacket</h3>
+                    <img src="https://picsum.photos/200" class="picture" alt="Vintage Leather Jacket"/>
+                    <p>Price: $50</p>
+                    <p>Description: A high-quality vintage leather jacket, size medium, lightly used.</p>
+
+                </article>
+            </section>
+
+            <section class="conversation">
+                <h2>Conversation</h2>
+                <article class="buyer">
+                    <p>Buyer: Is the jacket still available?</p>
+                    <time datetime="2024-11-21T09:00">09:00 AM</time>
+                </article>
+                <article class="seller">
+                    <p>Seller: Yes, it's available!</p>
+                    <time datetime="2024-11-21T09:05">09:05 AM</time>
+                </article>
+            </section>
+        </main>
+
+        <!-- Footer: to write a new message -->
+        <footer>
+            <form action="#" method="post">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </footer>
+    </body>
+
+</html>

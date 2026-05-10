@@ -1,0 +1,38 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.noir {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border: 1px solid black;
+    margin: -4px;
+    padding: 0;
+}
+
+.noir:hover {
+    background-color: grey;
+}
+
+.blanc {
+    height: 100px;
+    width: 100px;
+    background: white;
+    border: 2px solid black;
+    margin: -4px;
+    padding: 0;
+}
+
+.blanc:hover {
+    background-color: grey;
+}
+
+section {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+

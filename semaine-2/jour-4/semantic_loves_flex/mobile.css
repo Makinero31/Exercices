@@ -1,0 +1,97 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    background: #F4F4F4;
+}
+
+header, footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background: #333333;
+    color: white;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+}
+
+header nav ul, footer ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+
+}
+
+header nav ul, footer ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.shop, .special-offers, .reviews, .news {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.products, .offers, .testimonials, .articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.product, .offer, .testimonial, .news-article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 330px;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #333333;
+    margin: 20px;
+    padding: 20px;
+}
+
+.news-article {
+    max-width: 450px;
+    align-items: flex-start;
+}
+
+/*
+.img {
+    align-self: center;
+}
+ */
+
+footer nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    background: #2A7DF6;
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+}

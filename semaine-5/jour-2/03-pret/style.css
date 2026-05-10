@@ -1,0 +1,12 @@
+h1  {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.eligible {
+    color: green;    
+}
+
+.noteligible {
+    color: red;
+}

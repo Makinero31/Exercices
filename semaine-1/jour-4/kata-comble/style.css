@@ -1,0 +1,93 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+}
+
+header {
+    margin: 20px 10px 10px 10px;
+}
+
+nav {
+    margin: 10px;
+    text-align: center;
+}
+
+.navbar {
+    display: inline;
+
+}
+
+main {
+    margin: 10px;
+    padding: 10px;
+    height: 80%;
+    text-align: center;
+}
+
+.left {
+    margin-right: 9px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    height: 100%;
+    text-align: left;
+}
+
+.right {
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+    width: 70%;
+    height: 100%;
+    text-align: left;
+}
+
+article {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: 49%;
+    text-align: center;
+    vertical-align: top;
+}
+
+div {
+    display: inline-block;
+    margin: 10px;
+    height: 90%;
+    width: 45%;
+    text-align: left;
+}
+
+p {
+    margin: 10px;
+    background: lightgreen;
+}
+
+footer {
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    display: inline-block;
+}
+
+.copyright {
+    text-align: left;
+    width: 33%;
+    display: inline-block;
+}
+
+.lien {
+    text-align: center;
+    width: 33%;
+    display: inline-block;
+}
+
+.logo {
+    text-align: right;
+    width: 33%;
+    display: inline-block;
+}

@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+        <script src="https://kit.fontawesome.com/4c534384c8.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <title>Youtube</title>
+    </head>
+    <body class="flex flex-col bg-[#F2F2F2] relative lg:grid grid-cols-[250px_auto] grid-rows-[40px_auto]">
+        <header class="flex items-center justify-between bg-white p-5 border-solid border-blue-300 mt-3 mx-2 h-2 lg:col-span-2 sticky top-0 left-0 h-[55px] w-full z-1">
+            <div class="flex items-center gap-4">
+                <span class="hidden lg:block"><i class="fa-solid fa-bars" style="color: #606060;"></i></span>
+                <img src="resource/logo.png" alt="Youtube">
+                <h1 class="sr-only">YouTube</h1>
+            </div>
+            <div class="lg:w-[500px]">
+                <form action="search" class="flex justify-between pl-5 lg:border-1 border-[#CCCCCC] rounded-xs">
+                    <input type="search" placeholder="Search" class="hidden lg:block">
+                    <button type="button" class="lg:border-1 border-[#CCCCCC] rounded-xs lg:w-[65px] lg:bg-[#F4F4F4]"><i
+                            class="fa-solid fa-magnifying-glass" style="color: #606060;"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="hidden lg:flex gap-6 items-center">
+                <span><i class="fa-solid fa-video" style="color: #606060;"></i></span>
+                <span><i class="fa-solid fa-grip" style="color: #606060;"></i></span>
+                <span><i class="fa-solid fa-bell" style="color: #606060;"></i></span>
+                <img src="resource/profile.png" alt="profile picture">
+            </div>
+        </header>
+        <aside class="hidden lg:flex flex-col py-5 my-5 ml-2 gap-1 text-[#606060] fixed left-0 top-0">
+            <nav class="flex flex-col gap-2 py-2 bg-white">
+                <a href="#" class="flex gap-4 px-4 items-center bg-[#F4F4F4] h-[40px]">
+                    <i class="fa-solid fa-house text-[#ff0000]"></i>
+                    Home
+                </a>
+                <a href="#" class="flex gap-4 px-4 items-center h-[40px]">
+                    <i class="fa-solid fa-fire" style="color: #606060;"></i>
+                    <span>Trending</span>
+                </a>
+                <a href="#" class="flex gap-4 px-4 items-center h-[40px]">
+                    <i class="fa-regular fa-square-caret-right" style="color: #606060;"></i>
+                    <span>Subscriptions</span>
+                </a>
+            </nav>
+            <nav class="flex flex-col gap-2 py-2 bg-white">
+                <a href="#" class="flex gap-4 px-4 items-center h-[40px]">
+                    <i class="fa-solid fa-square-caret-right" style="color: #606060;"></i>
+                    <span>Library</span>
+                </a>
+                <a href="#" class="flex gap-4 px-4 items-center h-[40px]">
+                    <i class="fa-solid fa-clock-rotate-left" style="color: #606060;"></i>
+                    <span>History</span>
+                </a>
+                <a href="#" class="flex gap-4 px-4 items-center h-[40px]">
+                    <i class="fa-regular fa-square-caret-right" style="color: #606060;"></i>
+                    <span>Your videos</span>
+                </a>
+                <a href="#" class="flex gap-4 px-4 items-center h-[40px]">
+                    <i class="fa-solid fa-clock" style="color: #606060;"></i>
+                    <span>Watch later</span>
+                </a>
+                <a href="#" class="flex gap-4 px-4 items-center h-[40px]">
+                    <i class="fa-solid fa-thumbs-up" style="color: #606060;"></i>
+                    <span>Liked videos</span>
+                </a>
+            </nav>
+            <section class="flex flex-col gap-2 py-2 bg-white">
+                <h2 class="px-4 font-semibold">SUBSCRIPTIONS</h2>
+                <a href="#" class="flex gap-4 px-4 items-center h-[40px]">
+                    <img src="resource/candan.png" alt="oktay candan">
+                    <span>Oktay Candan</span>
+                </a>
+                <a href="#" class="flex gap-4 px-4 items-center h-[40px]">
+                    <img src="resource/morrison.png" alt="arnold morrison">
+                    <span>Arnold Morrison</span>
+                </a>
+                <a href="#" class="flex gap-4 px-4 items-center h-[40px]">
+                    <img src="resource/snyder.png" alt="hudson snyder">
+                    <span>Hudson Snyder</span>
+                </a>
+                <a href="#" class="flex gap-4 px-4 items-center h-[40px]">
+                    <img src="resource/burns.png" alt="thomas burns">
+                    <span>Thomas Burns</span>
+                </a>
+                <a href="#" class="flex gap-4 px-4 items-center h-[40px]">
+                    <i class="fa-solid fa-circle-plus" style="color: #606060;"></i>
+                    <span>Browse channels</span>
+                </a>
+            </section>
+            <section class="flex flex-col gap-2 py-2 bg-white">
+                <h2 class="px-4 font-semibold">MORE FROM YOUTUBE</h2>
+                <a href="#" class="flex gap-4 px-4 items-center h-[40px]">
+                    <i class="fa-brands fa-youtube" style="color: #606060;"></i>
+                    <span>YouTube Premium</span>
+                </a>
+                <a href="#" class="flex gap-4 px-4 items-center h-[40px]">
+                    <img src="resource/gaming.png" alt="gaming">
+                    <span>Gaming</span>
+                </a>
+                <a href="#" class="flex gap-4 px-4 items-center h-[40px]">
+                    <img src="resource/live.png" alt="live">
+                    <span>Live</span>
+                </a>
+            </section>
+            <nav class="flex flex-col gap-2 py-2 bg-white">
+                <a href="#" class="flex gap-4 px-4 items-center h-[40px]">
+                    <i class="fa-solid fa-gear" style="color: #606060;"></i>
+                    <span>Settings</span>
+                </a>
+                <a href="#" class="flex gap-4 px-4 items-center h-[40px]">
+                    <i class="fa-solid fa-flag" style="color: #606060;"></i>
+                    <span>Report history</span>
+                </a>
+                <a href="#" class="flex gap-4 px-4 items-center h-[40px]">
+                    <img src="resource/feedback.svg" alt="feedback">
+                    <span>Send feedback</span>
+                </a>
+            </nav>
+            <span class="pl-4 py-2 bg-white">&copy 2020 Google LLC</span>
+        </aside>
+        <main class="flex flex-col mx-2 my-1 lg:col-start-2">
+            <nav class="flex flex-nowrap bg-white p-2 gap-2 overflow-hidden lg:mt-9">
+                <button type="button" class="bg-[#F2F2F2] px-1"><i class="fa-regular fa-compass"
+                                                                   style="color: #606060;"></i>
+                </button>
+                <button type="button"
+                        class="bg-[#F2F2F2] text-nowrap rounded-md px-3 font-semibold text-white bg-black">
+                    All
+                </button>
+                <button type="button" class="bg-[#F2F2F2] text-nowrap rounded-md px-3 font-semibold">Music</button>
+                <button type="button"
+                        class="bg-[#F2F2F2] text-nowrap rounded-md px-3 py-1 font-semibold">
+                    Mixes
+                </button>
+                <button type="button" class="bg-[#F2F2F2] text-nowrap rounded-md px-3px-3 font-semibold">
+                    List of Tiny Desk Concerts
+                </button>
+
+                <button type="button" class="bg-[#F2F2F2] text-nowrap rounded-md px-3 font-semibold">
+                    Bass guitar
+                </button>
+                <button type="button" class="bg-[#F2F2F2] text-nowrap rounded-md px-3 font-semibold">
+                    Rhythms
+                </button>
+                <button type="button" class="bg-[#F2F2F2] text-nowrap rounded-md px-3 font-semibold">
+                    Podcasts
+                </button>
+                <button type="button" class="bg-[#F2F2F2] text-nowrap rounded-md px-3 font-semibold">
+                    Music Arrangements
+                </button>
+                <button type="button" class="bg-[#F2F2F2] text-nowrap rounded-md px-3 font-semibold">
+                    Progressive Rock
+                </button>
+                <button type="button" class="bg-[#F2F2F2] text-nowrap rounded-md px-3 font-semibold">
+                    News
+                </button>
+                <button type="button" class="bg-[#F2F2F2] text-nowrap rounded-md px-3 font-semibold">
+                    Harps
+                </button>
+                <button type="button" class="bg-[#F2F2F2] text-nowrap rounded-md px-3 font-semibold">
+                    Swing Music
+                </button>
+                <button type="button" class="bg-[#F2F2F2] text-nowrap rounded-md px-3 font-semibold">
+                    Ambient Music
+                </button>
+                <button type="button" class="bg-[#F2F2F2] text-nowrap rounded-md px-3 font-semibold">
+                    Concerto
+                </button>
+                <button type="button" class="bg-[#F2F2F2] text-nowrap rounded-md px-3 font-semibold">
+                    Arabic Music
+                </button>
+            </nav>
+            <section
+                    class="grid grid-cols-1 p-5 w-full bg-white items-center min-[480px]:grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+                <div>
+                    <figure class="relative">
+                        <img src="resource/mix.png" alt="my mix" class="object-cover w-full">
+                        <figcaption class="absolute right-0 bottom-0 text-white bg-black mb-2 mr-2 p-1 opacity-60"><i
+                                class="fa-solid fa-tower-broadcast" style="color: rgb(255, 255, 255);"></i> Mix
+                        </figcaption>
+                    </figure>
+                    <h3 class="font-medium">My Mix</h3>
+                    <span class="text-[#606060]">Hans Zimmer and more</span>
+                </div>
+                <!-- pas de alt sur les images, c'est juste des placeholders à la place de vidéos youtube -->
+                <article class="flex flex-col my-1 py-5">
+                    <figure class="relative">
+                        <img src="resource/way.png" alt="" class="object-cover w-full">
+                        <figcaption class="absolute right-0 bottom-0 text-white bg-black mb-2 mr-2 p-1 opacity-60">
+                            7:07
+                        </figcaption>
+                    </figure>
+                    <figure class="grid grid-cols-[auto_1fr] items-center mt-2 gap-3">
+                        <img src="resource/hemsey.png" alt="zack hemsey">
+                        <figcaption>
+                            <h3 class="line-clamp-2 font-medium leading-none">Zack Hemsey - 'The Way'</h3>
+                            <p class="line-clamp-1 text-[#606060]">Zack Hemsey <i class="fa-solid fa-music"
+                                                                                  style="color: #606060;"></i></p>
+                            <p class="line-clamp-1 text-[#606060]">64M views - 9 years ago</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="flex flex-col my-1 py-5">
+                    <figure class="relative">
+                        <img src="resource/design2.png" alt="" class="object-cover w-full">
+                        <figcaption class="absolute right-0 bottom-0 text-white bg-black mb-2 mr-2 p-1 opacity-60">
+                            54:48
+                        </figcaption>
+                    </figure>
+                    <figure class="grid grid-cols-[auto_1fr] items-center mt-2 gap-3">
+                        <img src="resource/figma.png" alt="">
+                        <figcaption>
+                            <h3 class="line-clamp-2 font-medium leading-none">Build it in Figma: Create a design system
+                                -
+                                Components</h3>
+                            <p class="line-clamp-1 text-[#606060]">Figma</p>
+                            <p class="line-clamp-1 text-[#606060]">16K views - 2 months ago</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="flex flex-col my-1 py-5">
+                    <figure class="relative">
+                        <img src="resource/piano.png" alt="" class="object-cover w-full">
+                        <figcaption class="absolute right-0 bottom-0 text-white bg-black mb-2 mr-2 p-1 opacity-60">
+                            10:13
+                        </figcaption>
+                    </figure>
+                    <figure class="grid grid-cols-[auto_1fr] items-center mt-2 gap-3">
+                        <img src="resource/jacob.png" alt="jacob's piano">
+                        <figcaption>
+                            <h3 class="line-clamp-2 font-medium leading-none">4 Beatiful Soundtracks | Relaxing Piano
+                                [10min]</h3>
+                            <p class="line-clamp-1 text-[#606060]">Jacob's Piano <i class="fa-solid fa-music"
+                                                                                    style="color: #606060;"></i></p>
+                            <p class="line-clamp-1 text-[#606060]">63M views - 4 years ago</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="flex flex-col my-1 py-5">
+                    <figure class="relative">
+                        <img src="resource/keynote.png" alt="" class="object-cover w-full">
+                        <figcaption class="absolute right-0 bottom-0 text-white bg-black mb-2 mr-2 p-1 opacity-60">
+                            24:45
+                        </figcaption>
+                    </figure>
+                    <figure class="grid grid-cols-[auto_1fr] items-center mt-2 gap-3">
+                        <img src="resource/figma.png" alt="figma">
+                        <figcaption>
+                            <h3 class="line-clamp-2 font-medium leading-none">Config Europe 2020 - Keynote, Dylan Field
+                                - Embracing the tension between...</h3>
+                            <p class="line-clamp-1 text-[#606060]">Fifma</p>
+                            <p class="line-clamp-1 text-[#606060]">27K views - 1 month ago</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="flex flex-col my-1 py-5">
+                    <figure class="relative">
+                        <img src="resource/rises.png" alt="" class="object-cover w-full">
+                        <figcaption class="absolute right-0 bottom-0 text-white bg-black mb-2 mr-2 p-1 opacity-60">
+                            3:03
+                        </figcaption>
+                    </figure>
+                    <figure class="grid grid-cols-[auto_1fr] items-center mt-2 gap-3">
+                        <img src="resource/trailers.png" alt="movieclips trailers">
+                        <figcaption>
+                            <h3 class="line-clamp-2 font-medium leading-none">The Dark Knighth rises (2012) - Batman's
+                                Sacrifice Scene (9/10)...</h3>
+                            <p class="line-clamp-1 text-[#606060]">Movieclips Trailers <i
+                                    class="fa-solid fa-circle-check" style="color: #606060;"></i></p>
+                            <p class="line-clamp-1 text-[#606060]">10M views - 3 years ago</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="flex flex-col my-1 py-5">
+                    <figure class="relative">
+                        <img src="resource/design.png" alt="" class="object-cover w-full">
+                        <figcaption class="absolute right-0 bottom-0 text-white bg-black mb-2 mr-2 p-1 opacity-60">
+                            54:48
+                        </figcaption>
+                    </figure>
+                    <figure class="grid grid-cols-[auto_1fr] items-center mt-2 gap-3">
+                        <img src="resource/figma.png" alt="figma">
+                        <figcaption>
+                            <h3 class="line-clamp-2 font-medium leading-none">Build it in Figma: Create a Design System
+                                — Foundations</h3>
+                            <p class="line-clamp-1 text-[#606060]">Figma</p>
+                            <p class="line-clamp-1 text-[#606060]">44K views - 4 months ago</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="flex flex-col my-1 py-5">
+                    <figure class="relative">
+                        <img src="resource/vengeance.png" alt="" class="object-cover w-full">
+                        <figcaption class="absolute right-0 bottom-0 text-white bg-black mb-2 mr-2 p-1 opacity-60">
+                            7:07
+                        </figcaption>
+                    </figure>
+                    <figure class="grid grid-cols-[auto_1fr] items-center mt-2 gap-3">
+                        <img src="resource/hemsey.png" alt="zack hemsey">
+                        <figcaption>
+                            <h3 class="line-clamp-2 font-medium leading-none">Zack Hemsey - "Vengeance"</h3>
+                            <p class="line-clamp-1 text-[#606060]">Zack Hemsey <i class="fa-solid fa-music"
+                                                                                  style="color: #606060;"></i></p>
+                            <p class="line-clamp-1 text-[#606060]">21M views - 9 years ago</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="flex flex-col my-1 py-5">
+                    <figure class="relative">
+                        <img src="resource/who.png" alt="" class="object-cover w-full">
+                        <figcaption class="absolute right-0 bottom-0 text-white bg-black mb-2 mr-2 p-1 opacity-60">
+                            2:03
+                        </figcaption>
+                    </figure>
+                    <figure class="grid grid-cols-[auto_1fr] items-center mt-2 gap-3">
+                        <img src="resource/trailers.png" alt="movieclips trailers">
+                        <figcaption>
+                            <h3 class="line-clamp-2 font-medium leading-none">Who Am I - No System Is Safe Official
+                                Trailer #1 (2014) - Tom...</h3>
+                            <p class="line-clamp-1 text-[#606060]">Movieclips Trailers <i
+                                    class="fa-solid fa-circle-check" style="color: #606060;"></i></p>
+                            <p class="line-clamp-1 text-[#606060]">64M views - 6 years ago</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="flex flex-col my-1 py-5">
+                    <figure class="relative">
+                        <img src="resource/interstellar.png" alt="" class="object-cover w-full">
+                        <figcaption class="absolute right-0 bottom-0 text-white bg-black mb-2 mr-2 p-1 opacity-60">
+                            10:13
+                        </figcaption>
+                    </figure>
+                    <figure class="grid grid-cols-[auto_1fr] items-center mt-2 gap-3">
+                        <img src="resource/jacob.png" alt="jacob's piano">
+                        <figcaption>
+                            <h3 class="line-clamp-2 font-medium leading-none">Interstellar Main Theme - Hans Zimmer (
+                                Epic instrumental/piano...</h3>
+                            <p class="line-clamp-1 text-[#606060]">Jacob's Piano <i class="fa-solid fa-music"
+                                                                                    style="color: #606060;"></i></p>
+                            <p class="line-clamp-1 text-[#606060]">11 M views - 5 years ago</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="flex flex-col my-1 py-5">
+                    <figure class="relative">
+                        <img src="resource/scrolling.png" alt="" class="object-cover w-full">
+                        <figcaption class="absolute right-0 bottom-0 text-white bg-black mb-2 mr-2 p-1 opacity-60">
+                            7:11
+                        </figcaption>
+                    </figure>
+                    <figure class="grid grid-cols-[auto_1fr] items-center mt-2 gap-3">
+                        <img src="resource/figma.png" alt="figma">
+                        <figcaption>
+                            <h3 class="line-clamp-2 font-medium leading-none">Figma Tutorial: Device Frames and
+                                Scrolling</h3>
+                            <p class="line-clamp-1 text-[#606060]">Figma</p>
+                            <p class="line-clamp-1 text-[#606060]">90K views - 1 month ago</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="flex flex-col my-1 py-5">
+                    <figure class="relative">
+                        <img src="resource/superman.png" alt="" class="object-cover w-full">
+                        <figcaption class="absolute right-0 bottom-0 text-white bg-black mb-2 mr-2 p-1 opacity-60">
+                            2:13
+                        </figcaption>
+                    </figure>
+                    <figure class="grid grid-cols-[auto_1fr] items-center mt-2 gap-3">
+                        <img src="resource/trailers.png" alt="movieclips trailers">
+                        <figcaption>
+                            <h3 class="line-clamp-2 font-medium leading-none">Batman v Superman: Dawn of Justice
+                                Official Teaser Trailer #1...</h3>
+                            <p class="line-clamp-1 text-[#606060]">Movieclips Trailers <i
+                                    class="fa-solid fa-circle-check" style="color: #606060;"></i></p>
+                            <p class="line-clamp-1 text-[#606060]">28M views - 6 years ago</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="flex flex-col my-1 py-5">
+                    <figure class="relative">
+                        <img src="resource/batman.png" alt="" class="object-cover w-full">
+                        <figcaption class="absolute right-0 bottom-0 text-white bg-black mb-2 mr-2 p-1 opacity-60">
+                            2:03
+                        </figcaption>
+                    </figure>
+                    <figure class="grid grid-cols-[auto_1fr] items-center mt-2 gap-3">
+                        <img src="resource/trailers.png" alt="movieclips trailers">
+                        <figcaption>
+                            <h3 class="line-clamp-2 font-medium leading-none">The Batman Teaser Trailer (2021) |
+                                Movieclips Trailers</h3>
+                            <p class="line-clamp-1 text-[#606060]">Movieclips Trailers <i
+                                    class="fa-solid fa-circle-check" style="color: #606060;"></i></p>
+                            <p class="line-clamp-1 text-[#606060]">10M views - 3 years ago</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="flex flex-col my-1 py-5">
+                    <figure class="relative">
+                        <img src="resource/yiruma.png" alt="" class="object-cover w-full">
+                        <figcaption class="absolute right-0 bottom-0 text-white bg-black mb-2 mr-2 p-1 opacity-60">
+                            15:10
+                        </figcaption>
+                    </figure>
+                    <figure class="grid grid-cols-[auto_1fr] items-center mt-2 gap-3">
+                        <img src="resource/jacob.png" alt="jacob's piano">
+                        <figcaption>
+                            <h3 class="line-clamp-2 font-medium leading-none">4 Pieces by Yiruma | Relaxing Piano
+                                [15min]</h3>
+                            <p class="line-clamp-1 text-[#606060]">Jacob's Piano <i class="fa-solid fa-music"
+                                                                                    style="color: #606060;"></i></p>
+                            <p class="line-clamp-1 text-[#606060]">63M views - 4 years ago</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="flex flex-col my-1 py-5">
+                    <figure class="relative">
+                        <img src="resource/dashboard.png" alt="" class="object-cover w-full">
+                        <figcaption class="absolute right-0 bottom-0 text-white bg-black mb-2 mr-2 p-1 opacity-60">
+                            1:00
+                        </figcaption>
+                    </figure>
+                    <figure class="grid grid-cols-[auto_1fr] items-center mt-2 gap-3">
+                        <img src="resource/figma.png" alt="">
+                        <figcaption>
+                            <h3 class="line-clamp-2 font-medium leading-none">Organization Admin Settings: Dashboard
+                                overview [1/7]</h3>
+                            <p class="line-clamp-1 text-[#606060]">Figma</p>
+                            <p class="line-clamp-1 text-[#606060]">16K views - 2 months ago</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="flex flex-col my-1 py-5">
+                    <figure class="relative">
+                        <img src="resource/redemption.png" alt="" class="object-cover w-full">
+                        <figcaption class="absolute right-0 bottom-0 text-white bg-black mb-2 mr-2 p-1 opacity-60">
+                            3:10
+                        </figcaption>
+                    </figure>
+                    <figure class="grid grid-cols-[auto_1fr] items-center mt-2 gap-3">
+                        <img src="resource/hemsey.png" alt="zack hemsey">
+                        <figcaption>
+                            <h3 class="line-clamp-2 font-medium leading-none">Zack Hemsey - "Redemption"</h3>
+                            <p class="line-clamp-1 text-[#606060]">Zack Hemsey <i class="fa-solid fa-music"
+                                                                                  style="color: #606060;"></i></p>
+                            <p class="line-clamp-1 text-[#606060]">21M views - 9 years agp</p>
+                        </figcaption>
+                    </figure>
+                </article>
+            </section>
+        </main>
+        <footer class="flex justify-between items-center fixed bottom-0 right-0 left-0 bg-white mx-2 px-5 h-[55px] border-b-6 border-t-4 border-[#F2F2F2] lg:hidden">
+            <a href="#" class="flex flex-col items-center">
+                <i class="fa-solid fa-house"></i>
+                <span class="text-xs">Home</span>
+            </a>
+            <a href="#" class="flex flex-col items-center">
+                <i class="fa-solid fa-bolt"></i>
+                <span class="text-xs">Shorts</span>
+            </a>
+            <a href="#" class="flex flex-col items-center">
+                <i class="fa-regular fa-square-caret-right"></i>
+                <span class="text-xs">Subscriptions</span>
+            </a>
+            <a href="#" class="flex flex-col items-center">
+                <img src="resource/profile.png" alt="profile" class="w-5">
+                <span class="text-xs">You</span>
+            </a>
+        </footer>
+    </body>
+</html>
