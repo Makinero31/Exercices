@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/4c534384c8.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <title>On the groung - Rosé</title>
+    </head>
+    <body class="bg-[#171717] grid grid-cols-[286px_1fr_500px] grid-rows-[1fr_75px] font-[inter]">
+        <header class="flex-col bg-[#272727] pl-5 pr-5"> <!-- colonne de gauche -->
+            <div class="flex gap-2">
+                <img src="resources/logo.png" alt="Audiotica">
+                <h1 class="text-white text-[25px] font-[sen] font-semibold">auditica</h1>
+            </div>
+            <nav class="flex flex-col text-[19px] text-white items-start pt-10 ">
+                <button type="button" class="bg-[#EE4950] flex rounded-sm w-full items-center p-3 gap-2">
+                    <i class="fa-solid fa-house" style="color: rgb(255, 255, 255);"></i>
+                    <span>Home</span>
+                </button>
+                <button type="button" class="flex rounded-sm w-full items-center p-3 gap-2">
+                    <i class="fa-solid fa-table" style="color: rgb(255, 255, 255);"></i>
+                    <span>Browse</span>
+                </button>
+                <button type="button" class="flex rounded-sm w-full items-center p-3 gap-2">
+                    <i class="fa-regular fa-heart" style="color: rgb(255, 255, 255);"></i>
+                    <span>Favorite</span>
+                </button>
+                <button type="button" class="flex rounded-sm w-full items-center p-3 gap-2">
+                    <i class="fa-regular fa-headphones" style="color: rgb(255, 255, 255);"></i>
+                    <span>Library</span>
+                </button>
+            </nav>
+            <!--   <a href="#" class="text-[#2E3A56] text=[21px]"></a> -->
+            <p class="flex p-3 text-[19px] text-[#2e3a59] items-center"><i
+                    class="fa-regular fa-house"
+                    style="color: #2e3a59;"></i>
+                <span>Home</span>
+                <span class="ml-auto"><i class="fa-solid fa-plus"
+                                         style="color: rgb(255, 255, 255);"></i></span>
+            </p>
+            <span class="p-3 text-[19px] text-[#ee4950]">For workplace <i class="fa-solid fa-chart-simple"
+                                                                          style="color: #ee4950;"></i></span>
+            <ul class="flex flex-col text-[#959D99] text-[19px] p-3 gap-3">
+                <li><a href="#">Rich Brian's collection</a></li>
+                <li><a href="#">deep focus</a></li>
+                <li><a href="#">Lo-Fi Jazz upbeat</a></li>
+                <li><a href="#">For workspace</a></li>
+                <li><a href="#">Christmas playlist</a></li>
+            </ul>
+        </header>
+        <main class="flex flex-col items-center">  <!-- colonne du milieu -->
+            <header class="relative">    <!-- Bannière -->
+                <img src="resources/banner.png" alt="post malone - circles">
+                <search class="bg-white absolute top-0 p-3 rounded-md mt-4">
+                    <form>
+                        <label for="search"><i class="fa-solid fa-magnifying-glass" style="color: #272727;"></i></label>
+                        <input type="search" id="search" placeholder="Search artists, songs, albums"/>
+                        <button type="button">|<i class="fa-solid fa-microphone" style="color: #272727;"></i></button>
+                    </form>
+                </search>
+                <ul class="text-[#959D99] absolute bottom-0 left-0">
+                    <li>R&B</li>
+                    <li class="text-[#272727]">Pop</li>
+                    <li>Rap</li>
+                    <li>Ballad</li>
+                    <li>Country</li>
+                    <li>Hip Hop</li>
+                </ul>
+                <div class="text-white absolute bottom-0 right-0">
+                    <span>FEATURED SONGS</span>
+                    <h4>Post Malone</h4>
+                    <h3>Circles</h3>
+                    <div>
+                        <button type="button"><i class="fa-solid fa-ellipsis" style="color: #7a8580;"></i></button>
+                        <button type="button"><i class="fa-regular fa-heart" style="color: #7a8580;"></i></button>
+                        <button type="button">Play</button>
+                    </div>
+                </div>
+            </header>
+            <section>   <!-- New releases -->
+                <header class="flex justify-between items-center mb-2">
+                    <div class="flex items-center gap-3">
+                    <h2 class="text-white text-[20px]">New releases</h2>
+                    <i class="fa-solid fa-circle-play" style="color: #ee4950;"></i>
+                    </div>
+                    <a href="#" class="text-[#F3777D]">See more</a>
+                </header>
+                <div class="flex">
+                <figure>
+                    <img src="resources/swift.png" alt="taylor swift">
+                    <figcaption>
+                        <h3>Red (Taylor's version)</h3>
+                        <h4>Taylor Swift</h4>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="resources/doja.png" alt="doja cat">
+                    <figcaption>
+                        <h3>Need To Know</h3>
+                        <h4>Doja Cat</h4>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="resources/weeknd.png" alt="the weeknd">
+                    <figcaption>
+                        <h3>After Hours</h3>
+                        <h4>The Weeknd</h4>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="resources/soundwave.png" alt="soundwave">
+                    <figcaption>
+                        <h3>HIT MACHINE</h3>
+                        <h4>Soundwave</h4>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="resources/swift.png" alt="taylor swift">
+                    <figcaption>
+                        <h3>Red (Taylor's version)</h3>
+                        <h4>Ca sĩ</h4>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="resources/doja.png" alt="doja cat">
+                    <figcaption>
+                        <h3>Need To Know</h3>
+                        <h4>Doja Cat</h4>
+                    </figcaption>
+                </figure>
+            </section>
+            <section class="flex">   <!-- you may like -->
+                <header>
+                    <h2>You May Like</h2>
+                    <a href="#">See more</a>
+                </header>
+                <figure>
+                    <img src="resources/shaun.png" alt="shaun">
+                    <figcaption>
+                        <h3>Way back home</h3>
+                        <h4>SHAUN</h4>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="resources/bandit.png" alt="the clean bandit">
+                    <figcaption>
+                        <h3>Rockabye</h3>
+                        <h4>The Clean Bandit</h4>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="resources/kanye.png" alt="kanye west">
+                    <figcaption>
+                        <h3>Graduation</h3>
+                        <h4>Kanye West</h4>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="resources/zedd.png" alt="zedd">
+                    <figcaption>
+                        <h3>Stay</h3>
+                        <h4>Zedd</h4>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="resources/gayle.png" alt="gayle">
+                    <figcaption>
+                        <h3>abcdefu</h3>
+                        <h4>GAYLE</h4>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="resources/sheeran.png" alt="ed sheeran">
+                    <figcaption>
+                        <h3>Bad Habits</h3>
+                        <h4>Ed Sheeran</h4>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="resources/sweat$.png" alt="pink sweat">
+                    <figcaption>
+                        <h3>At My Worst</h3>
+                        <h4>Pink Sweat$</h4>
+                    </figcaption>
+                </figure>
+                </div>
+            </section>
+            <section> <!-- Recently played -->
+                <header>
+                    <h2>Recently Played</h2>
+                    <i class="fa-solid fa-circle-pause" style="color: #ee4950;"></i>
+                </header>
+                <ul>
+                    <li class="flex">
+                        <div>
+                            <span>1</span>
+                            <img src="resources/carey.png" alt="maria carey">
+                            <h3>All I Want For Christmas Is You</h3>
+                        </div>
+                        <h4>Maria Carey</h4>
+                        <span>Album</span>
+                        <div>
+                            <time>3:54</time>
+                            <button><i class="fa-regular fa-heart" style="color: #7a8580;"></i></button>
+                            <button><i class="fa-solid fa-grip-lines" style="color: #7a8580;"></i></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <button type="button"><i class="fa-regular fa-circle-pause" style="color: #ee4950;"></i>
+                            </button>
+                            <img src="resources/rose.png" alt="rosé">
+                            <h3>On The Ground</h3>
+                        </div>
+                        <h4>Rosé</h4>
+                        <span>-R-</span>
+                        <div>
+                            <time>3:54</time>
+                            <button><i class="fa-solid fa-heart" style="color: #ee4950;"></i></button>
+                            <button><i class="fa-solid fa-grip-lines" style="color: #ee4950;"></i></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <span>2</span>
+                            <img src="resources/donda.png" alt="kanye west">
+                            <h3>Donda</h3>
+                        </div>
+                        <h4>Kanye West</h4>
+                        <span>Donda</span>
+                        <div>
+                            <time>3:54</time>
+                            <button><i class="fa-regular fa-heart" style="color: #7a8580;"></i></button>
+                            <button><i class="fa-solid fa-grip-lines" style="color: #7a8580;"></i></button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <aside>     <!-- colonne de droite -->
+            <section class="bg-[#1E1E1E] text-white p-4 m-5 rounded-xl"> <!-- top streams real-time -->
+                <header class="flex items-center p-3">
+                    <h2>Top Streams Real-Time</h2>
+                    <div class="bg-[#1C2336] p-1 ml-auto">
+                        <button type="button" class="bg-[#EE4950] rounded-sm py-1 px-2">Local</button>
+                        <button type="button" class="px-2 py-1">Global</button>
+                    </div>
+                </header>
+                <ul class="flex flex-col p-3 gap-6">
+                    <li class="flex items-center gap-3">
+                        <span class="text-[#AFB6B2]">1</span>
+                        <img src="resources/bieber.png" alt="justin bieber">
+                        <div>
+                            <h3>Mistletoe</h3>
+                            <h4 class="text-[#AFB6B2]">Justin Bieber</h4>
+                        </div>
+                        <div class="flex ml-auto gap-2">
+                            <time>3:54</time>
+                            <button><i class="fa-regular fa-heart" style="color: #7a8580;"></i></button>
+                            <button type="button"><i class="fa-solid fa-ellipsis" style="color: #7a8580;"></i></button>
+                        </div>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="text-[#AFB6B2]">2</span>
+                        <img src="resources/adele.png" alt="adele">
+                        <div>
+                            <h3>Easy In Me</h3>
+                            <h4 class="text-[#AFB6B2]">Adele</h4>
+                        </div>
+                        <div class="flex ml-auto gap-2">
+                            <time>3:54</time>
+                            <button><i class="fa-regular fa-heart" style="color: #7a8580;"></i></button>
+                            <button type="button"><i class="fa-solid fa-ellipsis" style="color: #7a8580;"></i></button>
+                        </div>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="text-[#AFB6B2]">3</span>
+                        <img src="resources/public.png" alt="public library">
+                        <div>
+                            <h3>Moolight</h3>
+                            <h4 class="text-[#AFB6B2]">Public Library Commu...</h4>
+                        </div>
+                        <div class="flex ml-auto gap-2">
+                            <time>3:54</time>
+                            <button><i class="fa-regular fa-heart" style="color: #7a8580;"></i></button>
+                            <button type="button"><i class="fa-solid fa-ellipsis" style="color: #7a8580;"></i></button>
+                        </div>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="text-[#AFB6B2]">3</span>
+                        <img src="resources/scott.png" alt="travis scott">
+                        <div>
+                            <h3>SICKO MODE</h3>
+                            <h4 class="text-[#AFB6B2]">Travis Scott ft. Drake</h4>
+                        </div>
+                        <div class="flex ml-auto gap-2">
+                            <time>3:54</time>
+                            <button><i class="fa-regular fa-heart" style="color: #7a8580;"></i></button>
+                            <button type="button"><i class="fa-solid fa-ellipsis" style="color: #7a8580;"></i></button>
+                        </div>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="text-[#AFB6B2]">3</span>
+                        <img src="resources/fable.png" alt="vincent fable">
+                        <div>
+                            <h3>Get Lost</h3>
+                            <h4 class="text-[#AFB6B2]">Vincent Fable</h4>
+                        </div>
+                        <div class="flex ml-auto gap-2">
+                            <time>3:54</time>
+                            <button><i class="fa-regular fa-heart" style="color: #7a8580;"></i></button>
+                            <button type="button"><i class="fa-solid fa-ellipsis" style="color: #7a8580;"></i></button>
+                        </div>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="text-[#AFB6B2]">3</span>
+                        <img src="resources/sweat2.png" alt="pink sweat">
+                        <div>
+                            <h3>I Feel Good</h3>
+                            <h4 class="text-[#AFB6B2]">Pink Sweat$</h4>
+                        </div>
+                        <div class="flex ml-auto gap-2">
+                            <time>3:54</time>
+                            <button><i class="fa-regular fa-heart" style="color: #7a8580;"></i></button>
+                            <button type="button"><i class="fa-solid fa-ellipsis" style="color: #7a8580;"></i></button>
+                        </div>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="text-[#AFB6B2]">3</span>
+                        <img src="resources/bbrising.png" alt="bbrising">
+                        <div>
+                            <h3>Midsummer Madness</h3>
+                            <h4 class="text-[#AFB6B2]">BBrising</h4>
+                        </div>
+                        <div class="flex ml-auto gap-2">
+                            <time>3:54</time>
+                            <button><i class="fa-regular fa-heart" style="color: #7a8580;"></i></button>
+                            <button type="button"><i class="fa-solid fa-ellipsis" style="color: #7a8580;"></i></button>
+                        </div>
+                    </li>
+                </ul>
+                <details>
+                    <summary class="text-center text-[#AFB6B2] list-none">Expand <i class="fa-solid fa-angle-down"></i>
+                    </summary>
+                    <div class="flex items-center p-3 gap-3">
+                        <span class="text-[#AFB6B2]">3</span>
+                        <img src="resources/scott.png" alt="travis scott">
+                        <div>
+                            <h3>SICKO MODE</h3>
+                            <h4 class="text-[#AFB6B2]">Travis Scott ft. Drake</h4>
+                        </div>
+                        <div class="flex ml-auto gap-2">
+                            <time>3:54</time>
+                            <button><i class="fa-regular fa-heart" style="color: #7a8580;"></i></button>
+                            <button type="button"><i class="fa-solid fa-ellipsis"></i></button>
+                        </div>
+                    </div>
+                </details>
+            </section>
+            <section class="text-white m-5">   <!-- categories -->
+                <header class="flex justify-between items-center ">
+                    <h2 class="text-[20px]">Categories</h2>
+                    <a href="#" class="text-[#F3777D]">See all</a>
+                </header>
+                <div class="grid grid-cols-2 grid-rows-4 gap-3">
+                    <a href="#">
+                        <figure class="relative h-[91px] w-full overflow-hidden">
+                            <img src="resources/pop.png" alt="pop" class="object-cover h-full w-full rounded-sm">
+                            <figcaption class="absolute text-[22px] font-medium inset-0 grid place-items-center">Pop
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure class="relative h-[91px] w-full overflow-hidden">
+                            <img src="resources/chill.png" alt="chill" class="object-cover h-full w-full rounded-sm">
+                            <figcaption class="absolute text-[22px] font-medium inset-0 grid place-items-center">Chill
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure class="relative h-[91px] w-full overflow-hidden">
+                            <img src="resources/podcast.png" alt="podcast"
+                                 class="object-cover h-full w-full rounded-sm">
+                            <figcaption class="absolute text-[22px] font-medium inset-0 grid place-items-center">
+                                Podcast
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure class="relative h-[91px] w-full overflow-hidden">
+                            <img src="resources/christmas.png" alt="Christmas"
+                                 class="object-cover h-full w-full rounded-sm">
+                            <figcaption class="absolute text-[22px] font-medium inset-0 grid place-items-center">
+                                Christmas
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure class="relative h-[91px] w-full overflow-hidden">
+                            <img src="resources/romance.png" alt="romance"
+                                 class="object-cover h-full w-full rounded-sm">
+                            <figcaption class="absolute text-[22px] font-medium inset-0 grid place-items-center">
+                                Romance
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure class="relative h-[91px] w-full overflow-hidden">
+                            <img src="resources/hiphop.png" alt="hip hop" class="object-cover h-full w-full rounded-sm">
+                            <figcaption class="absolute text-[22px] font-medium inset-0 grid place-items-center">Hip
+                                Hop
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure class="relative h-[91px] w-full overflow-hidden">
+                            <img src="resources/rock.png" alt="rock" class="object-cover h-full w-full rounded-sm">
+                            <figcaption class="absolute text-[22px] font-medium inset-0 grid place-items-center">Rock
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure class="relative h-[91px] w-full overflow-hidden">
+                            <img src="resources/jazz.png" alt="jazz" class="object-cover h-full w-full rounded-sm">
+                            <figcaption class="absolute text-[22px] font-medium inset-0 grid place-items-center">Jazz
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </section>
+        </aside>
+        <footer class="bg-[#272727]">    <!-- player -->
+            <div>
+                <nav> <!-- boutons contrôle -->
+                    <button type="button"><i class="fa-solid fa-shuffle" style="color: rgb(255, 255, 255);"></i>
+                    </button>
+                    <button type="button"><i class="fa-solid fa-backward-step" style="color: rgb(255, 255, 255);"></i>
+                    </button>
+                    <button type="button"><i class="fa-solid fa-circle-pause" style="color: rgb(255, 255, 255);"></i>
+                    </button>
+                    <button type="button"><i class="fa-solid fa-forward-step" style="color: rgb(255, 255, 255);"></i>
+                    </button>
+                    <button type="button"><i class="fa-solid fa-repeat" style="color: rgb(255, 255, 255);"></i></button>
+                </nav>
+                <div>
+                    <img src="resources/rose.png" alt="rose">
+                    <div>
+                        <h3>On The Ground</h3>
+                        <h4>Rosé</h4>
+                    </div>
+                    <div>
+                        <time>2:45</time>
+                        <progress max="207" value="165"></progress>
+                        <time>3:27</time>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button type="button"><i class="fa-regular fa-comment" style="color: rgb(255, 255, 255);"></i></button>
+                <button type="button"><i class="fa-solid fa-bars" style="color: rgb(255, 255, 255);"></i></button>
+                <button type="button"><i class="fa-solid fa-heart" style="color: rgb(255, 255, 255);"></i></button>
+                <button type="button"><i class="fa-solid fa-ellipsis" style="color: rgb(255, 255, 255);"></i></button>
+                <button type="button"><i class="fa-solid fa-volume-high" style="color: rgb(255, 255, 255);"></i>
+                </button>
+            </div>
+        </footer>
+    </body>
+</html>
